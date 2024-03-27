@@ -1,3 +1,9 @@
+:root {
+    --primary: rgb(50, 171, 241);
+    --bg: #0ce3fb8d;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +22,7 @@ body {
     font-family: 'poppins', sans-serif;
     background-color: var(--bg);
     color: #fff;
+    height: 2000px;
 }
 
 .navbar {
@@ -23,7 +30,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.4rem 7%;
-    background-color: rgba(174, 27, 27, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     border-bottom: 1px solid #664d34;
     position: fixed;
     top: 0;
@@ -31,3 +38,52 @@ body {
     right: 0;
     z-index: 9999;
 }
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+    mix-blend-mode: difference;
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    mix-blend-mode: difference;
+}
+
+/* .navbar .navbar-nav a:hover {
+    color: var(--primary);
+
+} */
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+
+/* .navbar .navbar-extra a {
+    color: #fff;
+    margin: 0.5rem;
+} */
+
+
+
+
+
+
+
+
+
